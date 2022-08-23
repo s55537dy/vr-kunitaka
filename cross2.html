@@ -38,10 +38,10 @@ const rot = { x: 0, y: 70, z: 0 }; // 車の初期回転
 for (;;) {
   mcar.setAttribute("position", pos);
   mcar.setAttribute("rotation", rot);
-  rot.y += 2;
+  rot.y += 10;
   pos.x -= .05;
   if (pos.x < -20) {
-    pos.x = 10;
+    pos.x = 5;
   }
   await sleep(1000 / 60);
 }
